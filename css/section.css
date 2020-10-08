@@ -1,0 +1,196 @@
+html {
+    box-sizing: border-box;
+    color: #7E7E82;
+    font-size: 16px;
+}
+
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'TT Lakes';
+    background-color: #F8F8F8;
+    position: relative;
+    box-sizing: inherit;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('/fonts/TTLakes-Regular.eot');
+    src: local('TT Lakes Regular'), local('TTLakes-Regular'),
+        url('fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/TTLakes-Regular.woff') format('woff'),
+        url('fonts/TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('fonts/TTLakes-Bold.eot');
+    src: local('TT Lakes Bold'), local('TTLakes-Bold'),
+        url('fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/TTLakes-Bold.woff') format('woff'),
+        url('fonts/TTLakes-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.section {
+    width: 100%;
+    min-width: 320px;
+}
+
+a {
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.title{
+    width: 100%;
+    height: 80px;
+    border-top: 2px solid #D9FFF5;
+    padding:16px;
+    background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+    font-family: TT Lakes;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    color: #7E7E82;
+}
+.brands-container:after{
+position: relative;
+content: " ";
+display: block;
+background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+margin-left: auto;
+margin-right: -16px;
+margin-top:-140px;
+height: 81px;
+width: 24px;
+z-index: 100;
+}
+
+ .brands-container{  
+padding-right: 16px;
+}
+.section .brands-container__item{
+  width: 240px;
+  margin-right: 16px;
+  margin-top: 16px;
+}
+.brands-container__swiper{
+    display: flex;
+    flex-shrink: 0;
+    padding: 0px 16px 0px 16px;
+}
+
+.brands-container__link:after{
+content: " ";
+display: block;
+width: 40px;
+height: 40px;
+background:url(../img/ic/go.svg) no-repeat;
+margin-left: auto;
+}
+.swiper-link{
+    display: flex;
+    align-items: center;
+    padding: 0px 16px;
+    height: 72px;
+    border-radius: 6px;
+    background-color:white;
+    border: 1px solid #EAEAEA;
+}
+.swiper-container{
+    height:132px;
+}
+
+.brands-container__img{
+    display: block;
+}
+.section__show-more{
+     display: none;
+    }
+@media screen and (min-width: 767px) {
+ .section .brands-container{    
+        max-height: 184px;
+        overflow: hidden;
+        height:auto; 
+    } 
+    .section__container{
+        margin-bottom: 24px;
+    }    
+.title{
+    height: 56px;
+    border-top: 2px solid #D9FFF5;
+    padding-left:24px;
+}
+.brands-container__swiper{
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.swiper-container{
+        height: auto;
+    }
+.swiper-pagination{
+        display: none;
+    }    
+.brands-container__swiper{
+ padding-left:24px;
+     }
+.section .brands-container__item{
+    width: 224px;
+    height: 72px;
+    margin-right: 24px;
+}
+
+.show-more{
+    background-color: inherit;
+    background: url(../img/ic/icon.svg) no-repeat left center;
+    height: 24px;
+    letter-spacing: -0.2px;
+    line-height: 24px;
+    font-size: 16px;
+    padding-left: 24px;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    display: block;
+}
+.section__show-more{
+      margin-left: 32px;
+    }
+    .section__hidden{
+        margin-top: 46px;
+        margin-left: 40px;
+    }
+.section .all-brands{
+    max-height: none;
+    }
+    .active-button{
+        display: block;
+     }
+}
+@media screen and (min-width: 1120px){
+.title{
+    height: 56px;
+    border-top: 2px solid #D9FFF5;
+    padding-left:32px;
+    background:inherit;
+}
+.brands-container__swiper{
+    padding-left: 32px;
+    }
+.brands-container__item{
+    margin-right: 32px;
+}
+}
