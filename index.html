@@ -105,13 +105,9 @@
        },
        });
         }
-        else if(mySwiper){
-            
-        }  
-       else{
-         mySwiper.destroy();
+      else if(typeof mySwiper =='object'){
+        mySwiper.destroy();      
        }
-
 }
         mediaQuery.addListener(handleTabletChange);
         handleTabletChange(mediaQuery);
